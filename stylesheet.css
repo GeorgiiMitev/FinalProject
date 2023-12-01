@@ -1,0 +1,274 @@
+﻿body {   
+    margin: 0 auto;
+    max-width: auto;
+    font-family:cursive;
+}
+
+nav {
+    background-color: #c71e1e;
+    text-align: center;
+}
+    nav ul {
+        display: inline-flex;
+        list-style-type: none;
+        font-size: 1.3vw;
+        margin-right: 50px;
+        flex-flow: wrap;
+        
+        
+    }
+    nav ul li {
+        margin-left: 60px;
+        margin-right: 60px;
+        
+    }
+        nav ul li a {
+            text-decoration: none;
+            color: beige;
+            font-family: cursive;
+            font-weight: bold;
+            text-shadow: 3px 3px 2px black;
+        }
+        nav ul li .ref1:hover, .ref2:hover, .ref3:hover, .ref4:hover, #activeref1, #activeref2 {
+            background-color: #fff;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            width: 10%;
+            font-size: 1.5vw;
+            border: 4px solid black;
+            text-shadow: none;
+            border-radius: 0 0 10px 10px;
+        }
+
+        
+
+#image-container {
+    overflow: hidden;
+    text-align: left;
+    color: white;
+}
+    #image-container img {
+        margin: -150px 0 -250px 0;
+        filter: brightness(35%);
+    }
+.centered-text {
+    position: absolute;
+    top: 25%;
+    right: 55%;
+    font-size: 2.5vw;
+    font-family: cursive;
+    text-shadow: 8px 8px 3px black;
+    margin-right: 300px;
+    font-weight: bold;
+    display: flex;
+}
+#image-container {
+    overflow: hidden;
+    position: relative;
+    justify-content: left;
+    width: 100%;
+    height: auto;
+}
+
+#logo-container img {
+   margin: -250px;
+   margin-right: 350px;
+
+}
+
+
+
+#line{
+    position: absolute;
+    margin: 0 auto;
+    color: black;
+    background-color: black;
+    border: none;
+}
+.article {
+    flex-direction: column;
+    width: 30%;
+    background-color: #c71e1e;
+    color: beige;
+    font-size: 1vw;
+    text-align: justify-all;
+    font-family: cursive;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px black;
+    border: 1px solid black;
+    margin: 10px 0;
+    
+}
+#article-box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.article p:first-letter{
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+.article-heading-container{
+    text-align: center;
+}
+#form-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    font-size: 1vw;
+}
+    #form-container input {
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: 0.76vw;
+        font-family: cursive;
+        color: royalblue;
+        font-weight: bold;
+        text-justify: auto;
+    }
+        #form-container input:hover, textarea:hover {
+            background-color: #d9d9d9;    
+        }
+#form-center {
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    right: 25%;
+    font-weight: bold;
+}
+form p{
+    font-size: 0.60vw;
+}
+#message{
+    height: 50px;
+}
+#required{
+    color: red;
+}
+fieldset {
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid beige;
+    color: beige;
+    backdrop-filter: blur(4px)
+}
+    
+fieldset legend{
+    font-size: 1.26vw;
+}
+textarea {
+    width: 95%;
+    resize: none;
+    font-size: 0.76vw;
+    font-family: cursive;
+    color: royalblue;
+    font-weight: bold;
+    text-justify: auto;
+    border: 2px solid black;
+}
+button {
+    width: 99%;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 1vw;
+    font-family: cursive;
+    color: beige;
+    font-weight: bold;
+    background-color: royalblue
+}
+button:hover{
+    background-color: dodgerblue;
+    
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #3c3d3c;
+    text-decoration: none;
+    text-align: center;
+    border-top: 3px solid black;
+    text-shadow: 2px 2px 1px black;
+    font-size: 1vw;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+
+}
+footer ul li a {
+    color: lightgray;
+    text-decoration: none;
+}
+#more-about{
+    display: flex;
+    justify-content: center;
+
+}
+#more-about a{
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border: 3px solid black;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    font-size: 1vw;
+    box-shadow: 2px 2px 4px black;
+    
+}
+    #more-about a:hover {
+       font-size: 1.21vw;
+    }
+.motorbike-article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.article-images {
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
+    width: 50%;
+    padding: 20px;
+    
+}
+    .article-images img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+        
+    }
+
+.motorbike-article-text {
+    width: 50%;
+    font-size: 1vw;
+    float: right;
+    text-justify: auto;
+    
+    
+}
+    .motorbike-article-text span {
+        font-weight: bold;
+        font-size: 1.11vw;
+        
+    }
+.images-divider {
+    background-color: black;
+    color: black;
+    
+}
+
+
+
+
+    
+
+
+
