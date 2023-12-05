@@ -3,9 +3,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Свържи се с нас</title>
     <link href="stylesheet.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function send() {
+            document.getElementById("sent").style = "color: limegreen;"     
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -25,12 +30,12 @@
             <div id="form-container">
                 <fieldset>
                     <legend>Свържете се с нас</legend>
-                    <form method="get">
+                    <form name="form">
                         <p>Полетата с <span id="required">*</span> са задължителни.</p><br />
                         <label for="firstname">Име<span id="required">*</span></label><br />
                         <input id="firstname" class="inputbox" type="text" name="firstName" placeholder="Име..." /><br />
                         <br />
-                        <label for="lastname">Фамилия (по избор)</label><br />
+                        <label for="lastname">Фамилия</label><br />
                         <input id="lastname" class="inputbox" type="text" name="lastName" placeholder="Фамилия..." /><br />
                         <br />
                         <label for="email">Email<span id="required">*</span></label><br />
@@ -40,8 +45,11 @@
                         <textarea id="message" placeholder="Пишете тук..."></textarea>
                         <br />
                         <br />
-                        <button type="submit">Изпращане</button>
+                        <input type="button" value="Изпращане" id="sendbutton" onclick="send()">
                     </form>
+                    <div align="center" id="send">
+                        <span id="sent">Изпратено!</span>
+                    </div>
                 </fieldset>
             </div>
         </div>
