@@ -249,6 +249,7 @@ footer ol li{
 .motorbike-article {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     
 }
@@ -270,7 +271,7 @@ footer ol li{
 
 .motorbike-article-text {
     width: 50%;
-    font-size: 1vw;
+    font-size: 20px;
     float: right;
     text-justify: auto;
     
@@ -278,9 +279,44 @@ footer ol li{
 }
     .motorbike-article-text span {
         font-weight: bold;
-        font-size: 1.11vw;
+        font-size: 22px;
         
     }
+@media only screen and (max-width: 1600px) {
+    div.motorbike-article-text {
+        font-size: 16px;
+    }
+
+    div.article-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    div.motorbike-article-text {
+        font-size: 16px;
+    }
+
+    div.article-images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    div.motorbike-article-text {
+        font-size: 13px;
+    }
+
+    div.article-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 .images-divider {
     background-color: black;
     color: black;
