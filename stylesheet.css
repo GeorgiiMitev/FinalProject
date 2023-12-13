@@ -11,7 +11,7 @@ nav {
     nav ul {
         display: inline-flex;
         list-style-type: none;
-        font-size: 1.3vw;
+        font-size: 25px;
         margin-right: 50px;
         flex-wrap: wrap;
         
@@ -65,6 +65,31 @@ nav {
     font-weight: bold;
     display: flex;
 }
+@media only screen and (max-width: 1600px) {
+    .centered-text{
+        right: 45%;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .centered-text {
+        right: 25%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .centered-text {
+        right: 5%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .centered-text {
+        right: -20%;
+    }
+}
+@media only screen and (max-width: 501px) {
+    .centered-text {
+        right: -50%;
+    }
+}
 #image-container {
     overflow: hidden;
     position: relative;
@@ -103,18 +128,65 @@ nav {
     margin: 10px 0;
     
 }
-#article-box{
+#article-box {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 10px;
 }
-.article p:first-letter{
+
+.article p:first-letter {
     text-transform: uppercase;
     font-size: 2vw;
 }
-.article-heading-container{
+
+.article-heading-container {
     text-align: center;
 }
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    #article-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .article{
+        width: 50%;
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #article-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .article {
+        width: 50%;
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 501px) {
+    #article-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .article {
+        width: 50%;
+        font-size: 2vw;
+    }
+}
+
 #form-container {
     display:flex;
     justify-content: center;
@@ -204,7 +276,7 @@ footer {
     text-align: center;
     border-top: 3px solid black;
     text-shadow: 2px 2px 1px black;
-    font-size: 1vw;
+    font-size: 20px;
 }
 footer ul{
     list-style-type: none;
@@ -246,6 +318,33 @@ footer ol li{
     #more-about-button a:hover {
        font-size: 1.21vw;
     }
+
+
+@media only screen and (max-width: 1024px) {
+    #more-about-button a {
+        font-size: 2vw
+    }
+        #more-about-button a:hover {
+            font-size: 2.2vw;
+        }
+}
+@media only screen and (max-width: 768px) {
+    #more-about-button a {
+        font-size: 2vw
+    }
+        #more-about-button a:hover {
+            font-size: 2.2vw;
+        }
+}
+
+@media only screen and (max-width: 501px) {
+    #more-about-button a {
+        font-size: 2vw
+    }
+        #more-about-button a:hover {
+            font-size: 2.2vw;
+        }
+}
 .motorbike-article {
     display: flex;
     justify-content: center;
@@ -296,17 +395,20 @@ footer ol li{
 @media only screen and (max-width: 1400px) {
     div.motorbike-article-text {
         font-size: 16px;
+        width: 50%;
     }
 
-    div.article-images{
+    div.article-images {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 }
 @media only screen and (max-width: 1024px) {
     div.motorbike-article-text {
-        font-size: 13px;
+        font-size: 16px;
+        width: 50%;
     }
 
     div.article-images {
@@ -389,7 +491,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 20px;
     color: beige;
     text-shadow: 2px 2px 1px black;
 }
